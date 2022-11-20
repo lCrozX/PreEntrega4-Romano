@@ -1,0 +1,27 @@
+@import "../utilities/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*===================MENU==========================*/
+#menu a,
+button {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#menu a {
+    color: #ffffff;
+
+    &:hover {
+        color: #f80101;
+    }
+}
+
+.dropdown-menu.show {
+    display: block;
+    background-color: map-get($mapa_de_colores, color2);
+}
+
+/*===================SLIDER DE IMAGENES==========================*/
+.carousel-inner {
+    max-height: 20rem;
+}

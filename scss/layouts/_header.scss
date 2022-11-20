@@ -1,0 +1,12 @@
+@import "../utilities/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*===================HEADER==========================*/
+header {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    background-color: map-get($mapa_de_colores, color1);
+}

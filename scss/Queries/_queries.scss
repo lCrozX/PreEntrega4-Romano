@@ -1,0 +1,142 @@
+@import "../utilities/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width: 1200px) {
+
+    #intro,
+    #equipo {
+        width: 90%;
+        margin: auto;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+@media (max-width: 768px) {
+    #equipo {
+        width: 90%;
+        margin: auto;
+    }
+
+    #img-equipo {
+        max-height: 20rem;
+        width: 90%;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #local {
+        flex-wrap: wrap;
+    }
+
+    .mapa img {
+        width: 100%;
+        height: auto;
+    }
+
+    #bg-contactos {
+        top: -120px;
+    }
+
+    .galeria_de_juegos img {
+        width: 45%;
+    }
+
+    .card {
+        height: 5px;
+    }
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+
+    #servicios-fila-2,
+    #servicios-fila-1 {
+        width: 100%;
+    }
+
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .contenedor-services {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr;
+        grid-template-areas: "pos1" "pos2";
+    }
+
+    .galeria_de_juegos {
+        grid-area: pos1;
+        justify-content: center;
+    }
+
+    /*==Tuve que deshabilitar el grid porque aun no encuentro la forma de como hacer bien lo que tengo pensado=*/
+
+    .barra_izquierda {
+        grid-area: pos2;
+        margin-left: 0%;
+    }
+
+    /*==Tuve que deshabilitar el grid porque aun no encuentro la forma de como hacer bien lo que tengo pensado=*/
+
+    .galeria_de_juegos img {
+        width: 80%;
+    }
+
+    .barra_izquierda {
+        display: none;
+
+        img {
+            width: 15%;
+        }
+    }
+
+    .card {
+        height: 4px;
+    }
+
+    .galeria_de_juegos {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 100px;
+        gap: 20px;
+    }
+
+    #contactos-fila-2 a,
+    #contactos-fila-1 a {
+        width: 100%;
+        text-decoration: none;
+        color: white;
+        background-color: map-get($mapa_de_colores, color2);
+        padding: 10px;
+        padding-left: 35%;
+        border-radius: 100px;
+        transition: all 1s;
+        display: flex;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/*# sourceMappingURL=main.css.map */
